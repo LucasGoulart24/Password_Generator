@@ -37,29 +37,32 @@ function App() {
         <h1>Password Generator</h1>
         <div className='Card'>
           <div className='Barra'>
-            <p>{gerarSenha || 'Password'}</p>
+            <p style={{color: '#FFF'}}>{gerarSenha || 'Password'}</p>
           </div>
-          <div style={{marginTop: 10, marginBottom: 10, color: '#FFF'}}>
+          <div style={{marginTop: 15, marginBottom: 15, color: '#FFF'}}>
             <label>
-              <input 
+              <input
+                style={{marginRight: 5}} 
                 type="checkbox" 
                 checked={usarNumero} 
                 onChange={()=> setUsarNumero(!usarNumero)}
               />Números
             </label>
           </div>
-           <div style={{marginTop: 10, marginBottom: 10, color: '#FFF'}}>
+           <div style={{marginTop: 15, marginBottom: 15, color: '#FFF'}}>
             <label>
               <input 
+                style={{marginRight: 5}}
                 type="checkbox"
                 checked={usarLetras}
                 onChange={()=> setUsarLetras(!usarLetras)}
               />Letras Maiusculas e Minusculos
             </label>
           </div>
-           <div style={{marginTop: 10, marginBottom: 10, color: '#FFF'}}>
+           <div style={{marginTop: 15, marginBottom: 15, color: '#FFF'}}>
             <label>
               <input 
+                style={{marginRight: 5}}
                 type="checkbox"
                 checked={usarSimbolo}
                 onChange={()=> setUsarSimbolo(!usarSimbolo)}
